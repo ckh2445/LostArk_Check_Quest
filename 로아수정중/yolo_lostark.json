@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "yolo-lostark-269c8",
+  "private_key_id": "f62a56b8976edbfe9b772edb1ef680a3514cd25d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPTOqCAxv5Ha+x\nOzUvrhU/n5M0059tQnhI6ZC8a3l3TzfTfZbs0gKiexMW2L2NSpABkOJg6jWe8lPj\nqQYXdJtnXQzrN7MnEDsV+MZYROzBTITF47tQ777Llh67RakAPgeWG+oxTLeT0YXx\nEAOa7HrYXz1/dK5iO7Wjy0GN+8In0Q3gb5IuY/BfrKJSTZevcjTCNn+6i55jLHjw\nVifU2OhSqHOnKVCz/awV2U7iMwE55h+TLEYAVBJIsshcPNYOmRIr8V20StT+8HGU\n02Nha63if4gtAB58JibP5AIrNS6/2jsexBzWuu3098j5MigPbiEubgHXpLQaY4Nb\nq+np+NNZAgMBAAECggEAKNFIDpv+ns1f2gmithX0tJ+e3GS77EdNiGvG9jbCRsII\nJ8I/nLdYUfZiYpoALskq9Ef7LyKGttqXtojCPI2XCOH7SHhh8/Pf8npW0awWoxQG\nQ7HM4Qmn243eVLkJZxUPqNirwxPMRNSZZ0ckMpXUNXUBVq6apJiFsi/0IzkaeHy4\nYpZTuK6MX8qlxwqJxda5FQazySxU188UqUavjGCbtioFwGOws4ugCvoBFPLxkmWX\ndnP3AdTONW6k7KBDtqEcpATpM+IRsdrwMXMBUE7fGWy0k4ZT3uPD2ZAVZJhYMuGA\n2lR2FIwEMbT0R21XcRfAhKv3Vad9Syl8FIkRIKjOdQKBgQDnFvUhS3aiLod/4oBc\nlcHOvSlYBj18zHIB9nFb1rUozwvNAzQS35uBF84Ui3cqtardCe0hWgs5n8Jlf9YI\ni3dPY8OKImTjWVoqkaFZiJhyf2xUyr4hqk60yD+ihfyfPqHRtIyJc+4a4ag+8mVK\nW3rV5vTGNw7ILcnsLKulDqg87QKBgQDlpXtyVFpPv1yAj7SddO0SKahVwbk7zCop\nH4KraCh1PRTofvDNBg6vo9UoN6Lx/a8dOBqdz9MxmczdBUZgBqyM0uQHLwSjLCdD\n/AFLkgcs/4818Du9lJUx+ZkJbdPM4qXXQjTow/EmGs/HrURdicAMmKNJCSH2SWse\nhBcQpwCOnQKBgC/kNB0YVJe76Nz6BfwqFSZRUZYqhOeuPxplBo0v7A9vCVUNiuc2\nbDXOxyi+1o2FZMm2WuyEirsAfvsmCSdwL+PGGyovgpUTWXpk//lcM6vW+I6CDfFQ\nKEuTDI0UE4y1IDgjoNSDsB7mEUYqWg+U8doOqT/C/U9DHgvSHihw5zDpAoGADoq6\nFHVO+rnNa76t20KqOHo21KddyXGWQeBi7+O6nCHwDwDq0rDNgUXIm7FaOiSsUBdb\naB7e6scod957pF0H1CsOkX3it0p2ehGdK2Hl3m2Ybfv2bHzaLb32eOhhfxnjEox4\nuTyfKqCMA8LvD1VHugR4YomXgvcHN3l51G4e1OkCgYBse3JMRA+jBGQ/Kk+aH65J\nzblqQ3uffspBc9yXe4XUk7Nf+V3nksrb+wAkNhkQputnr4gpv0QoK2HeR2XFjL85\nwDnNvPRiMQRmt0vtfnyzLrlpbzWD4la219vitZ0axDoE5akosqjQ/s9z9Vur9Re0\nLdZlhqRKQrzRKxlMWMKnyQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-bcoqq@yolo-lostark-269c8.iam.gserviceaccount.com",
+  "client_id": "110001272080436017717",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-bcoqq%40yolo-lostark-269c8.iam.gserviceaccount.com"
+}
