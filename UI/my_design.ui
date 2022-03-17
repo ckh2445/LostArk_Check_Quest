@@ -44,7 +44,7 @@
     <normaloff>../../../../다운로드.png</normaloff>../../../../다운로드.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(18, 194, 233, 255), stop:0.5 rgba(196, 113, 237, 255), stop:1 rgba(246, 79, 89, 255));
+   <string notr="true">background-color: pink;
 QAbstractScrollArea.background:white;</string>
   </property>
   <property name="dockNestingEnabled">
@@ -76,10 +76,10 @@ QAbstractScrollArea.background:white;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 200);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Search</string>
@@ -103,9 +103,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -139,10 +138,11 @@ border-radius: 10px;</string>
      <enum>Qt::ClickFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
-border-radius: 5px;</string>
+     <string notr="true">border: 2px solid white; 
+color: #dc3545;
+border-radius: 10px;
+
+background-color: whitesmoke;</string>
     </property>
     <property name="text">
      <string/>
@@ -207,9 +207,8 @@ border-radius: 5px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -241,9 +240,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -275,9 +273,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -309,9 +306,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -343,9 +339,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -377,9 +372,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -411,9 +405,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -445,9 +438,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -479,9 +471,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -513,9 +504,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -547,9 +537,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -581,9 +570,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -615,9 +603,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -649,9 +636,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -683,9 +669,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -717,9 +702,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -751,9 +735,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -785,9 +768,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -819,9 +801,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -853,9 +834,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -887,9 +867,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -921,9 +900,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -955,9 +933,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -989,9 +966,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1023,9 +999,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1057,9 +1032,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1091,9 +1065,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1125,9 +1098,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1159,9 +1131,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1193,9 +1164,8 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -1227,10 +1197,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 200);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>종료</string>

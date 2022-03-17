@@ -13,10 +13,10 @@ import Cal_Days
 
 form_class = uic.loadUiType("ui\my_design.ui")[0]
 
-stylesheet1 = ("background-color : rgba(0, 0, 0, 250);"
-            "border: 2px solid white;"
-            "color: white;"
-            "border-radius: 10px;")
+stylesheet1 = ("color: #dc3545;"
+                "border-color: #dc3545;"
+                "background-color: whitesmoke;"
+                "border-radius: 15px;")
 stylesheet2 = ("background-color : rgba(0, 0, 0, 50);"
             "border: 2px solid white;"
             "color: white;"

@@ -44,7 +44,7 @@
     <normaloff>../../../../../다운로드.png</normaloff>../../../../../다운로드.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(18, 194, 233, 255), stop:0.5 rgba(196, 113, 237, 255), stop:1 rgba(246, 79, 89, 255));
+   <string notr="true">background-color: pink;
 QAbstractScrollArea.background:white;</string>
   </property>
   <property name="dockNestingEnabled">
