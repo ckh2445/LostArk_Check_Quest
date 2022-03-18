@@ -87,7 +87,7 @@ class Main_Form(QMainWindow, form_class): #design.Ui_mainWindow
             self.Characters_info.clear() # Characters_info 초기화
             
         except: # 검색된 캐릭터가 없을 때 찾을 수 없다고 메시지 박스 띄워줌
-            QMessageBox.warning(self.warning,"Warning","캐릭터를 찾을 수 없습니다.")
+            QMessageBox.warning(self,"Warning","캐릭터를 찾을 수 없습니다.")
             #self.warning.close()
             #return
     
@@ -204,26 +204,22 @@ class Main_Form(QMainWindow, form_class): #design.Ui_mainWindow
         self.PB_Character.setValue(self.step) #현재 진행상황 표시
         #print(self.Characters_info)
 
-
-
-class Warning(QMainWindow):
-    def __init__(self):
-        QMainWindow.__init__(self)
-        self.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint | Qt.WindowStaysOnTopHint)
-
-
 class Logo_Form(QPushButton):
     def __init__(self):
         #self.main_form = main_form
         super().__init__()
         self.btn=QPushButton("Yolo")
+        self.btn.resize(40,20)
         self.btn.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
         self.width = int(GetSystemMetrics(0))
         self.btn.move(int(self.width/2),0)
         self.btn.clicked.connect(self.Clicked)
         self.btn.setFont(QFont('Consolas', 11))
-        self.btn.setStyleSheet("background-color : rgba(0, 0, 0, 250);"
-                                "color: white;")
+        self.btn.setStyleSheet("color: #dc3545;"
+                                "border-color: #dc3545;"
+                                "background-color: whitesmoke;"
+                                "border-radius: 15px;")
+
         self.btn.show()
         
     def Clicked(self):

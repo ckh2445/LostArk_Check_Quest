@@ -78,10 +78,10 @@ QAbstractScrollArea.background:white;</string>
      <enum>Qt::StrongFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 5px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string/>
@@ -117,9 +117,8 @@ border-radius: 5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -154,10 +153,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>확인</string>
@@ -182,9 +181,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 200);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -212,9 +210,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -248,10 +245,10 @@ border-radius: 10px;</string>
      <enum>Qt::StrongFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 5px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string/>
@@ -287,9 +284,8 @@ border-radius: 5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -323,10 +319,10 @@ border-radius: 10px;</string>
      <enum>Qt::StrongFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 5px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string/>

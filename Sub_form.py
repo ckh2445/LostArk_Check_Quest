@@ -12,10 +12,10 @@ import datetime
 form_class = uic.loadUiType("ui\Character_Form.ui")[0]
 sub_class = uic.loadUiType("ui\sub_form.ui")[0]
 
-stylesheet1 = ("background-color : rgba(0, 0, 0, 250);"
+stylesheet1 = ("background-color : whitesmoke;"
             "border: 2px solid white;"
             "color: white;"
-            "border-radius: 10px;")
+            "border-radius: 15px;")
 
 class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
     def __init__(self,input):
@@ -28,75 +28,75 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         self.PB_Chaos = self.PB_Chaos
         self.PB_Quest = self.PB_Quest
         
+        #가디언토벌 버튼 리스너
+        self.BT_1.clicked.connect(lambda: self.Guardian_complete_button(self.BT_1)) #가디언토벌 버튼 1
+        self.BT_2.clicked.connect(lambda: self.Guardian_complete_button(self.BT_2)) #가디언토벌 버튼 2
+        self.BT_3.clicked.connect(lambda: self.Guardian_complete_button_2(self.BT_3)) #도전가디언토벌 버튼 3
+        #주간레이드 버튼 리스너
+        self.BT_4.clicked.connect(lambda: self.Raid_complete_button(self.BT_4)) #아르고스
+        self.BT_5.clicked.connect(lambda: self.Raid_complete_button(self.BT_5)) #발탄
+        self.BT_6.clicked.connect(lambda: self.Raid_complete_button(self.BT_6)) #비아키스
+        self.BT_7.clicked.connect(lambda: self.Raid_complete_button(self.BT_7)) #쿠크세이튼
+        self.BT_8.clicked.connect(lambda: self.Raid_complete_button(self.BT_8)) #아브렐슈드
+        #에포나 버튼 리스너
+        self.BT_9.clicked.connect(lambda: self.Quest_complete_button(self.BT_9)) #에포나 1
+        self.BT_10.clicked.connect(lambda: self.Quest_complete_button(self.BT_10)) #에포나 2
+        self.BT_11.clicked.connect(lambda: self.Quest_complete_button(self.BT_11)) #에포나 3
+        #카오스던전 버튼 리스너
+        self.BT_12.clicked.connect(lambda: self.Chaos_complete_button(self.BT_12)) #카오스 1
+        self.BT_13.clicked.connect(lambda: self.Chaos_complete_button(self.BT_13)) #카오스 2
+        #종료 버튼 리스너
+        self.BT_Exit.clicked.connect(self.BT_Exit_Clicked)
+        
+        self.data = Load_data()
+        
+        self.LB_Character_Name.setText(self.input) #닉네임을 input로 바꾼다
+        
+        self.Character_Lv = str(self.data[self.input]["Lv"][3:])
+        self.Character_Lv = self.Character_Lv.replace(",","")
+        self.LB_Character_Lv.setText(self.Character_Lv) #input을 가진 key의 value를 setting [3:]는 LV.를 빼기 위함
+        
         try:
-            #가디언토벌 버튼 리스너
-            self.BT_1.clicked.connect(lambda: self.Guardian_complete_button(self.BT_1)) #가디언토벌 버튼 1
-            self.BT_2.clicked.connect(lambda: self.Guardian_complete_button(self.BT_2)) #가디언토벌 버튼 2
-            self.BT_3.clicked.connect(lambda: self.Guardian_complete_button_2(self.BT_3)) #도전가디언토벌 버튼 3
-            #주간레이드 버튼 리스너
-            self.BT_4.clicked.connect(lambda: self.Raid_complete_button(self.BT_4)) #아르고스
-            self.BT_5.clicked.connect(lambda: self.Raid_complete_button(self.BT_5)) #발탄
-            self.BT_6.clicked.connect(lambda: self.Raid_complete_button(self.BT_6)) #비아키스
-            self.BT_7.clicked.connect(lambda: self.Raid_complete_button(self.BT_7)) #쿠크세이튼
-            self.BT_8.clicked.connect(lambda: self.Raid_complete_button(self.BT_8)) #아브렐슈드
-            #에포나 버튼 리스너
-            self.BT_9.clicked.connect(lambda: self.Quest_complete_button(self.BT_9)) #에포나 1
-            self.BT_10.clicked.connect(lambda: self.Quest_complete_button(self.BT_10)) #에포나 2
-            self.BT_11.clicked.connect(lambda: self.Quest_complete_button(self.BT_11)) #에포나 3
-            #카오스던전 버튼 리스너
-            self.BT_12.clicked.connect(lambda: self.Chaos_complete_button(self.BT_12)) #카오스 1
-            self.BT_13.clicked.connect(lambda: self.Chaos_complete_button(self.BT_13)) #카오스 2
-            #종료 버튼 리스너
-            self.BT_Exit.clicked.connect(self.BT_Exit_Clicked)
-            
-            self.data = Load_data()
-            
-            self.LB_Character_Name.setText(self.input) #닉네임을 input로 바꾼다
-            
-            self.Character_Lv = str(self.data[self.input]["Lv"][3:])
-            self.Character_Lv = self.Character_Lv.replace(",","")
-            self.LB_Character_Lv.setText(self.Character_Lv) #input을 가진 key의 value를 setting [3:]는 LV.를 빼기 위함
-            
             # 휴식게이지 불러오기 없으면 except문
             self.Guardian = int(self.data[self.input]['Guardian'])
             self.Chaos = int(self.data[self.input]['Chaos'])
             self.Quest = int(self.data[self.input]['Quest'])
-
+            
             #휴식게이지 날짜 비교 
             #self.day = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S')
             
-            
-            self.my_date = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S') #데이터 저장 시간을 불러온다 
+            self.now = datetime.datetime.now()
+            #self.my_date = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S') #데이터 저장 시간을 불러온다 
+            #self.my_date = datetime.datetime.strptime(str(self.now),'%Y-%m-%d %H:%M:%S')
             self.next_date =  datetime.datetime.strptime(self.data['next_day'], '%Y-%m-%d %H:%M:%S')
             self.next_week = datetime.datetime.strptime(self.data['next_week'], '%Y-%m-%d %H:%M:%S')
             
             #print(int((self.my_date.date() - self.next_date.date()).days) )
-            #print(self.my_date.time())
-            if self.my_date.date() >= self.next_date.date():
-                gob = int((self.my_date.date() - self.next_date.date()).days) 
-                
-                if gob >= 1:
-                    #gob += 1
-                    if self.my_date.time() >= self.next_date.time():
-                        gob += 1
-                    else:
-                        pass
-                    
-                    #print(gob, "는 1보다 크다")
-                    #gob += 1
-                    self.Guardian = self.Guardian + int(self.data[self.input]["가디언토벌"]) * 10 + (20 * (gob-1 ))
-                    self.Quest = self.Quest + int(self.data[self.input]["에포나"]) * 10 + (30 * (gob-1 ))
-                    self.Chaos = self.Chaos + int(self.data[self.input]["카오스던전"]) * 10  + (20 * (gob-1 ))
-                    
-                    #print(gob)
-                    self.data["next_day"] = str(self.next_date + datetime.timedelta(days=gob))
-                elif gob == 0:
-                    if self.my_date.time() >= self.next_date.time():
-                        self.Guardian = self.Guardian + int(self.data[self.input]["가디언토벌"])* 10 
-                        self.Quest = self.Quest + int(self.data[self.input]["에포나"])* 10
-                        self.Chaos = self.Chaos + int(self.data[self.input]["카오스던전"]) * 10
-                        self.data["next_day"] = str(self.next_date + datetime.timedelta(days=1))
-                    
+            #self.now = self.now + datetime.timedelta(days=12)
+            #self.test2 = self.test.date() - self.next_date.date()
+            
+            #print(str(self.test2.days) + "   " + str(type(self.test2.days)))
+            
+            if self.now >= self.next_date:
+                self.gob = self.now.date() - self.next_date.date()
+                if self.gob.days == 0:
+                    self.Guardian = self.Guardian + int(self.data[self.input]["가디언토벌"])* 10 
+                    self.Quest = self.Quest + int(self.data[self.input]["에포나"])* 10
+                    self.Chaos = self.Chaos + int(self.data[self.input]["카오스던전"]) * 10
+                    # print(self.Guardian)
+                    # print(self.Quest)
+                    # print(self.Chaos)
+                else:
+                    self.Guardian = self.Guardian + int(self.data[self.input]["가디언토벌"]) * 10 + (20 * (self.gob.days))
+                    self.Quest = self.Quest + int(self.data[self.input]["에포나"]) * 10 + (30 * (self.gob.days ))
+                    self.Chaos = self.Chaos + int(self.data[self.input]["카오스던전"]) * 10  + (20 * (self.gob.days))
+                    #Test
+                    # print(self.Guardian)
+                    # print(self.Quest)
+                    # print(self.Chaos)
+                self.next_day = self.now + datetime.timedelta(days=1)
+                self.next_day = self.next_day.replace(hour=6, minute=0, second=0, microsecond=0) #시간정리
+                self.data["next_day"] = str(self.next_day)
                     
                 if self.Guardian >= 100:
                     self.Guardian = 100
@@ -115,7 +115,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                 self.data[self.input]["에포나"] = 3
                 #Save_data(self.data)
                 
-            if self.my_date >= self.next_week:
+            if self.now >= self.next_week:
                 self.data[self.input]["아르고스"] = 0
                 self.data[self.input]["발탄"] = 0
                 self.data[self.input]["비아키스"] = 0
@@ -124,7 +124,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                 self.data[self.input]["도전가디언토벌"] = 0
                 self.data[self.input]["레이드횟수"] = 0
                 self.BT_3.setEnabled(True)
-                self.BT_4.setEnabled(False)
+                self.BT_4.setEnabled(True)
                 self.BT_5.setEnabled(True)
                 self.BT_6.setEnabled(True)
                 self.BT_7.setEnabled(True)
@@ -233,8 +233,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                 self.complete_button(self.BT_9)
                 self.complete_button(self.BT_10)
                 self.complete_button(self.BT_11)
-            self.now = datetime.datetime.now()
-            self.data[self.input]['day'] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+            
+            #self.data[self.input]['day'] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
             Save_data(self.data)
             self.show()
             
@@ -250,8 +250,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         
         self.data[self.input]['도전가디언토벌'] += 1
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
         
         Save_data(self.data)
         
@@ -260,8 +260,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         input.setEnabled(False)
         
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
         
     def Guardian_complete_button(self,input:QPushButton):
         input.setStyleSheet(stylesheet1)
@@ -285,8 +285,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         #print(self.data[self.input]['Guardian'])
         
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
         
         Save_data(self.data)
         
@@ -308,8 +308,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
             self.complete_button(self.BT_8)
             
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
 
         Save_data(self.data)
         
@@ -318,8 +318,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
     def keyPressEvent(self, e): #Esc
         if e.key() == Qt.Key_Escape:
                 #시간 저장
-            self.now = datetime.datetime.now()
-            self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+            # self.now = datetime.datetime.now()
+            # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
             self.close()
 
     def Quest_complete_button(self,input:QPushButton):
@@ -345,8 +345,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         self.data[self.input]['에포나'] -= 1
         
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
         Save_data(self.data)
     
     def Chaos_complete_button(self,input:QPushButton):
@@ -370,8 +370,8 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
         
         self.data[self.input]['카오스던전'] -= 1
         #시간 저장
-        self.now = datetime.datetime.now()
-        self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+        # self.now = datetime.datetime.now()
+        # self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
         Save_data(self.data)
         
 class sub_Form(QMainWindow,sub_class):
@@ -412,8 +412,8 @@ class sub_Form(QMainWindow,sub_class):
                 self.data[self.input]["가디언토벌"] = 2
                 self.data[self.input]["카오스던전"] = 2
                 self.data[self.input]["에포나"] = 3
-                self.now = datetime.datetime.now()
-                self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+                #self.now = datetime.datetime.now()
+                #self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
                 
                 
                 Save_data(self.data)
@@ -427,11 +427,6 @@ class sub_Form(QMainWindow,sub_class):
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Escape:
             self.close()
-            
-class Warning(QMainWindow):
-    def __init__(self):
-        QMainWindow.__init__(self)
-        self.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint | Qt.WindowStaysOnTopHint)
 
 input = "쪼커달"
 

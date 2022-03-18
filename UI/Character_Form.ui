@@ -44,7 +44,7 @@
     <normaloff>../../../../../다운로드.png</normaloff>../../../../../다운로드.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(18, 194, 233, 255), stop:0.5 rgba(196, 113, 237, 255), stop:1 rgba(246, 79, 89, 255));
+   <string notr="true">background-color: pink;
 QAbstractScrollArea.background:white;</string>
   </property>
   <property name="dockNestingEnabled">
@@ -69,9 +69,8 @@ QAbstractScrollArea.background:white;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -90,10 +89,17 @@ border-radius: 10px;</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 5px;</string>
     </property>
     <property name="value">
@@ -128,10 +134,10 @@ border-radius: 5px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>종료</string>
@@ -146,10 +152,17 @@ border-radius: 10px;</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 5px;</string>
     </property>
     <property name="value">
@@ -177,9 +190,8 @@ border-radius: 5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -207,9 +219,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -237,9 +248,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -258,10 +268,17 @@ border-radius: 10px;</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 5px;</string>
     </property>
     <property name="value">
@@ -289,9 +306,8 @@ border-radius: 5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -326,10 +342,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>발탄</string>
@@ -360,10 +376,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>비아키스</string>
@@ -394,10 +410,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>쿠크세이튼</string>
@@ -428,10 +444,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>아브렐슈드</string>
@@ -455,9 +471,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -485,9 +500,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -515,9 +529,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -545,9 +558,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -606,9 +618,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -636,9 +647,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -673,10 +683,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -707,10 +717,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -741,10 +751,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -775,10 +785,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -809,10 +819,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -843,10 +853,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>아르고스</string>
@@ -877,10 +887,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>도전가디언토벌</string>
@@ -911,10 +921,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
@@ -938,9 +948,8 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 150);
- border: 2px solid white; 
-color: white;
+     <string notr="true">border: 2px solid white; 
+color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
@@ -975,10 +984,10 @@ border-radius: 10px;</string>
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 50);
- border: 2px solid white; 
-color: white;
-border-radius: 10px;</string>
+     <string notr="true">color: #dc3545;
+border-color: #dc3545;
+background-color: whitesmoke;
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string>Clear</string>

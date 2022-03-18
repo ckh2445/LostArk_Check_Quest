@@ -169,6 +169,14 @@ background-color: whitesmoke;</string>
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(0, 0, 0, 150);
  border: 2px solid white; 
