@@ -65,10 +65,11 @@ class Main_Form(QMainWindow, form_class): #design.Ui_mainWindow
     def BT_Exit_Clicked(self):
         QApplication.quit()
     #Test  
+    
     def BT_Character_list_Clicked(self,char_str): #버튼 리스너 연결 함수 매개변수로는 str 
         #print(char_str)
         self.char_form = Sub_form.Character_Form(char_str)
-        #self.char_form.show()
+        self.char_form = self.char_form.load_data()
         
     #Test End
     def BT_Character_Name_Search_Clicked(self): #BT_Character_Name_Search_Clicked
