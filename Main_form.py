@@ -9,7 +9,7 @@ from win32api import GetSystemMetrics
 from Load_data import Load_data,Save_data
 import datetime
 import Sub_form
-import Cal_Days
+
 
 form_class = uic.loadUiType("ui\my_design.ui")[0]
 
@@ -54,7 +54,7 @@ class Main_Form(QMainWindow, form_class): #design.Ui_mainWindow
             pass
         else:
             for index,key in enumerate(self.Characters_info):
-                if index == len(self.Characters_info)-2:
+                if index == len(self.Characters_info):
                     break
                 self.Character_list_dic[str(index)].setText(str(key) + '\n' + str(self.Characters_info[key]['Lv'])) #Chrarcter_list[index]의 Text를 닉네임과 레벨로 바꿈
                 self.Character_list_dic[str(index)].setEnabled(True) #dic에 Character_list[index] 활성화
@@ -146,15 +146,15 @@ class Main_Form(QMainWindow, form_class): #design.Ui_mainWindow
             
             #날짜 구하기
             #self.Characters_info["date"] = str(datetime.datetime.now())
-            self.now = datetime.datetime.now()
-            self.next_day = self.now + datetime.timedelta(days=1) #다음날 날짜
-            self.next_day = self.next_day.replace(hour=6, minute=0, second=0, microsecond=0) #시간정리
-            self.Characters_info["next_day"] = str(self.next_day.strftime("%Y-%m-%d %H:%M:%S"))
+            # self.now = datetime.datetime.now()
+            # self.next_day = self.now + datetime.timedelta(days=1) #다음날 날짜
+            # self.next_day = self.next_day.replace(hour=6, minute=0, second=0, microsecond=0) #시간정리
+            # self.Characters_info["next_day"] = str(self.next_day.strftime("%Y-%m-%d %H:%M:%S"))
             
-            self.next_week = str(Cal_Days.GetWeekLastDate())
-            self.next_week = datetime.datetime.strptime(self.next_week, '%Y-%m-%d')
-            self.next_week = self.next_week.replace(hour=6, minute=0, second=0, microsecond=0)
-            self.Characters_info["next_week"] = str(self.next_week)
+            # self.next_week = str(Cal_Days.GetWeekLastDate())
+            # self.next_week = datetime.datetime.strptime(self.next_week, '%Y-%m-%d')
+            # self.next_week = self.next_week.replace(hour=6, minute=0, second=0, microsecond=0)
+            # self.Characters_info["next_week"] = str(self.next_week)
             
             Save_data(self.Characters_info) #json 저장
                 
@@ -225,6 +225,7 @@ class Logo_Form(QPushButton):
         
     def Clicked(self):
         self.window = Main_Form()
+        self.window.__init__()
         self.window.show()
         #self.main_form.show()
         

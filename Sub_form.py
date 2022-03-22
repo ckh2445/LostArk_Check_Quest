@@ -2,11 +2,10 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QBasicTimer,Qt,QCoreApplication
 import sys
-import json
 from Load_data import Load_data,Save_data
-import collections
 from PyQt5 import QtGui
 import datetime
+import Cal_Days
 
 form_class = uic.loadUiType("ui\Character_Form.ui")[0]
 sub_class = uic.loadUiType("ui\sub_form.ui")[0]
@@ -64,14 +63,16 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
             self.Quest = int(self.data[self.input]['Quest'])
             
             self.now = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S') #데이터 저장 시간을 불러온다 
-            self.next_date =  datetime.datetime.strptime(self.data['next_day'], '%Y-%m-%d %H:%M:%S')
-            self.next_week = datetime.datetime.strptime(self.data['next_week'], '%Y-%m-%d %H:%M:%S')
+            self.next_date =  datetime.datetime.strptime(self.data[self.input]['next_day'], '%Y-%m-%d %H:%M:%S')
+            self.next_week = datetime.datetime.strptime(self.data[self.input]['next_week'], '%Y-%m-%d %H:%M:%S')
             
             #test
             #print(int((self.my_date.date() - self.next_date.date()).days) )
             #self.now = self.now + datetime.timedelta(days=12)
             #self.test2 = self.test.date() - self.next_date.date()
             
+            #print(self.now)
+            #print(self.next_date)
             if self.now >= self.next_date:
                 self.gob = self.now.date() - self.next_date.date()
                 if self.gob.days == 0:
@@ -83,10 +84,9 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                     self.Quest = self.Quest + int(self.data[self.input]["에포나"]) * 10 + (30 * (self.gob.days ))
                     self.Chaos = self.Chaos + int(self.data[self.input]["카오스던전"]) * 10  + (20 * (self.gob.days))
                     
-
                 self.next_day = self.now + datetime.timedelta(days=1)
                 self.next_day = self.next_day.replace(hour=6, minute=0, second=0, microsecond=0) #시간정리
-                self.data["next_day"] = str(self.next_day)
+                self.data[self.input]["next_day"] = str(self.next_day)
                     
                 if self.Guardian >= 100:
                     self.Guardian = 100
@@ -120,7 +120,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                 self.BT_7.setEnabled(True)
                 self.BT_8.setEnabled(True)
                 
-                self.data["next_week"] = str(self.next_week + datetime.timedelta(days=7))
+                self.data[self.input]["next_week"] = str(self.next_week + datetime.timedelta(days=7))
                 #Save_data(self.data)
             
             #print(gob)
@@ -215,6 +215,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
             
             self.now = datetime.datetime.now()
             self.data[self.input]['day'] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+            self.next_day = self.now + datetime.timedelta(days=1)
             Save_data(self.data)
             
             self.show()
@@ -395,6 +396,16 @@ class sub_Form(QMainWindow,sub_class):
             self.data[self.input]["에포나"] = 3
             self.now = datetime.datetime.now()
             self.data[self.input]["day"] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
+            
+            self.next_day = self.now + datetime.timedelta(days=1) #다음날 날짜
+            self.next_day = self.next_day.replace(hour=6, minute=0, second=0, microsecond=0) #시간정리
+            self.data[self.input]["next_day"] = str(self.next_day.strftime("%Y-%m-%d %H:%M:%S"))
+            
+            self.next_week = str(Cal_Days.GetWeekLastDate())
+            self.next_week = datetime.datetime.strptime(self.next_week, '%Y-%m-%d')
+            self.next_week = self.next_week.replace(hour=6, minute=0, second=0, microsecond=0)
+            self.data[self.input]["next_week"] = str(self.next_week)
+            
             
             Save_data(self.data)
             self.close()
