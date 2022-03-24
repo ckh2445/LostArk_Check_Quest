@@ -62,7 +62,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
             self.Chaos = int(self.data[self.input]['Chaos'])
             self.Quest = int(self.data[self.input]['Quest'])
             
-            self.now = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S') #데이터 저장 시간을 불러온다 
+            #self.now = datetime.datetime.strptime(self.data[self.input]['day'], '%Y-%m-%d %H:%M:%S') #데이터 저장 시간을 불러온다 
             self.next_date =  datetime.datetime.strptime(self.data[self.input]['next_day'], '%Y-%m-%d %H:%M:%S')
             self.next_week = datetime.datetime.strptime(self.data[self.input]['next_week'], '%Y-%m-%d %H:%M:%S')
             
@@ -70,7 +70,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
             #print(int((self.my_date.date() - self.next_date.date()).days) )
             #self.now = self.now + datetime.timedelta(days=12)
             #self.test2 = self.test.date() - self.next_date.date()
-            
+            self.now = datetime.datetime.now()
             #print(self.now)
             #print(self.next_date)
             if self.now >= self.next_date:
@@ -213,7 +213,7 @@ class Character_Form(QMainWindow, form_class): #design.Ui_mainWindow
                 self.complete_button(self.BT_10)
                 self.complete_button(self.BT_11)
             
-            self.now = datetime.datetime.now()
+            
             self.data[self.input]['day'] = str(self.now.strftime('%Y-%m-%d %H:%M:%S'))
             self.next_day = self.now + datetime.timedelta(days=1)
             Save_data(self.data)

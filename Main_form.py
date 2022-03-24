@@ -10,7 +10,6 @@ from Load_data import Load_data,Save_data
 import datetime
 import Sub_form
 
-
 form_class = uic.loadUiType("ui\my_design.ui")[0]
 
 stylesheet1 = ("color: #dc3545;"
