@@ -108,7 +108,7 @@ color: #5B2386;
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Character_Name</string>
+     <string>Search_Contents</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -135,7 +135,7 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="focusPolicy">
-     <enum>Qt::ClickFocus</enum>
+     <enum>Qt::WheelFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">border: 2px solid white; 
@@ -157,7 +157,7 @@ background-color: whitesmoke;</string>
      <bool>false</bool>
     </property>
     <property name="placeholderText">
-     <string>Input Character_Name</string>
+     <string>Input Search</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="PB_Character">
